@@ -1,27 +1,24 @@
 <template>
-  <div class = "hexagonA"><span>test</span></div>
-  
+  <div>
+    <div class="hexagonA">
+      <span>hello</span>
+    </div>
+  </div>
 </template>
+
+<script>
+export default {
+  
+}
+</script>
 
 <style lang="scss" scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 
 $hexagon_diameter: 0.5;
@@ -34,8 +31,6 @@ $hexagon_diameter: 0.5;
   position: relative;
   background: #ddd;
   transition: all 0.2s linear;
-  border-left: solid 1pt black;
-  border-right: solid 1pt black;
 }
 .hexagonA span {
   width: 100%;
@@ -49,7 +44,7 @@ $hexagon_diameter: 0.5;
 }
 .hexagonA:before,
 .hexagonA:after {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -58,8 +53,6 @@ $hexagon_diameter: 0.5;
   background: #ddd;
   transition: all 0.2s linear;
   z-index: 0;
-  border-left: solid 1pt black;
-  border-right: solid 1pt black;
 }
 .hexagonA:before {
   transform: rotate(60deg);
